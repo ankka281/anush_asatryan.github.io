@@ -13,6 +13,7 @@
             background-color: #f5f1e6;
             color: #333;
             line-height: 1.6;
+            text-align: center;
         }
         
         /* Цветовая палитра */
@@ -46,6 +47,7 @@
             color: var(--deep-blue);
             border-bottom: 2px dashed var(--teal);
             padding-bottom: 0.5rem;
+            margin-top: 2rem;
         }
         
         /* Секции с эффектом старой бумаги */
@@ -65,12 +67,15 @@
             font-size: 1.1rem;
             line-height: 1.8;
             color: var(--vintage-brown);
+            text-align: left;
+            margin: 0 auto;
+            max-width: 700px;
         }
         
         /* Иллюстрация с подписью */
         .artwork {
             text-align: center;
-            margin: 3rem 0;
+            margin: 3rem auto;
         }
         
         .artwork img {
@@ -89,7 +94,9 @@
         .about {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 2rem;
+            text-align: left;
         }
         
         .about img {
@@ -98,20 +105,6 @@
             object-fit: cover;
             border-radius: 50%;
             border: 3px solid var(--teal);
-        }
-        
-        /* Форма для сообщений */
-        .message-box {
-            background-color: var(--deep-blue);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        
-        .message-box a {
-            color: var(--sand);
-            text-decoration: none;
-            font-weight: bold;
         }
         
         /* Футер */
@@ -127,10 +120,15 @@
         @media (max-width: 768px) {
             .about {
                 flex-direction: column;
+                text-align: center;
             }
             
             h1 {
                 font-size: 2rem;
+            }
+            
+            .letter {
+                padding: 0 1rem;
             }
         }
     </style>
@@ -144,9 +142,9 @@
     </header>
     
     <!-- 💌 Письмо из будущего -->
-    <section class="letter">
+    <section>
         <h2>A Letter from the Year 2095</h2>
-        <div class="letter-content">
+        <div class="letter">
             <p><em>Dear Grandma Anna,</em></p>
             
             <p>I found your old letters and photographs today, tucked away in what's left of the coastal archives. The paper is brittle, the colors faded, but I can still see the ocean in your words—the ocean as it was before The Collapse.</p>
@@ -166,25 +164,17 @@
     <!-- 🎨 Визуальный раздел -->
     <section class="artwork">
         <h2>The Past and Future Collide</h2>
-        <img src="https://example.com/your-artwork.jpg" alt="Collage: past and future ocean">
+        <img src="images/ocean-collage.jpg" alt="Collage: past and future ocean">
         <p class="caption">The past and future meet in memory.</p>
     </section>
     
     <!-- 👤 Обо мне -->
     <section class="about">
-        <img src="https://example.com/your-photo.jpg" alt="Artist portrait">
+        <img src="images/author-photo.jpg" alt="Anush Asatryan">
         <div>
             <h2>About the Artist</h2>
-            <p>This project was created by [Your Name], a 15-year-old student passionate about ocean protection and environmental storytelling. Inspired by science and art, [she/I] decided to bring the voice of the future to the present.</p>
+            <p>My name is <strong>Anush Asatryan</strong>, I'm 15 years old. This project was created for the Ocean Awareness Contest 2025. Through art and storytelling, I want to show how our actions today affect the ocean's future.</p>
         </div>
-    </section>
-    
-    <!-- 💬 Интерактив -->
-    <section class="message-box">
-        <h2>Leave Your Message</h2>
-        <p>🌊 Want to leave a message to the ocean or your future self?</p>
-        <p>Write your thoughts here or share how you'll protect the ocean.</p>
-        <p><a href="https://forms.gle/example">Share your message →</a></p>
     </section>
     
     <!-- Футер -->
