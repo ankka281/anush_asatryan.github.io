@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tide of Memories – A message from the future</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Courier New', Georgia, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f1e6;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Цветовая палитра */
+        :root {
+            --teal: #2a9d8f;
+            --sand: #e9c46a;
+            --deep-blue: #264653;
+            --vintage-brown: #6b4f4f;
+        }
+        
+        /* Шапка с фоновым изображением */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), 
+                        rgba(0, 0, 0, 0.3)), 
+                        url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        h2 {
+            color: var(--deep-blue);
+            border-bottom: 2px dashed var(--teal);
+            padding-bottom: 0.5rem;
+        }
+        
+        /* Секции с эффектом старой бумаги */
+        section {
+            background-color: #fffaf0;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            position: relative;
+        }
+        
+        /* Эффект "винтажного письма" для текста */
+        .letter {
+            font-family: 'Merriweather', serif;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--vintage-brown);
+        }
+        
+        /* Иллюстрация с подписью */
+        .artwork {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .artwork img {
+            max-width: 100%;
+            border: 8px solid var(--sand);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .caption {
+            font-style: italic;
+            margin-top: 1rem;
+            color: var(--vintage-brown);
+        }
+        
+        /* Блок "обо мне" */
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .about img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--teal);
+        }
+        
+        /* Форма для сообщений */
+        .message-box {
+            background-color: var(--deep-blue);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .message-box a {
+            color: var(--sand);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Футер */
+        footer {
+            background-color: var(--deep-blue);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 🧭 Заголовок -->
+    <header>
+        <h1>Tide of Memories</h1>
+        <p>A message from the future – through the tide of time</p>
+    </header>
+    
+    <!-- 💌 Письмо из будущего -->
+    <section class="letter">
+        <h2>A Letter from the Year 2095</h2>
+        <div class="letter-content">
+            <p><em>Dear Grandma Anna,</em></p>
+            
+            <p>I found your old letters and photographs today, tucked away in what's left of the coastal archives. The paper is brittle, the colors faded, but I can still see the ocean in your words—the ocean as it was before The Collapse.</p>
+            
+            <p>You wrote about diving with hammerhead sharks in 2032, their silhouettes dancing through schools of silver fish. Now they only exist in DNA banks. The coral reefs you studied? Gone by 2067, bleached then crumbled to dust. The Arctic tern migration you loved? The last nest was recorded in 2081.</p>
+            
+            <p>I try to imagine the smell of salt without the undertone of petroleum from the '46 spill, the sound of waves without the constant hum of desalination plants. Your photos show beaches with actual sand, not the plastic granules that cover ours now.</p>
+            
+            <p>But here's what I need you to know: we're trying. The Ocean Reclamation Projects are slow, but the artificial kelp forests are showing promise. Maybe by 2105, the water will be clear enough for someone to see what's left of the starfish.</p>
+            
+            <p>I wish you could have saved it. We'll try to salvage what remains.</p>
+            
+            <p><em>With love,<br>Your granddaughter<br>November 2095</em></p>
+        </div>
+    </section>
+    
+    <!-- 🎨 Визуальный раздел -->
+    <section class="artwork">
+        <h2>The Past and Future Collide</h2>
+        <img src="https://example.com/your-artwork.jpg" alt="Collage: past and future ocean">
+        <p class="caption">The past and future meet in memory.</p>
+    </section>
+    
+    <!-- 👤 Обо мне -->
+    <section class="about">
+        <img src="https://example.com/your-photo.jpg" alt="Artist portrait">
+        <div>
+            <h2>About the Artist</h2>
+            <p>This project was created by [Your Name], a 15-year-old student passionate about ocean protection and environmental storytelling. Inspired by science and art, [she/I] decided to bring the voice of the future to the present.</p>
+        </div>
+    </section>
+    
+    <!-- 💬 Интерактив -->
+    <section class="message-box">
+        <h2>Leave Your Message</h2>
+        <p>🌊 Want to leave a message to the ocean or your future self?</p>
+        <p>Write your thoughts here or share how you'll protect the ocean.</p>
+        <p><a href="https://forms.gle/example">Share your message →</a></p>
+    </section>
+    
+    <!-- Футер -->
+    <footer>
+        <p>This project was created for the <a href="https://bowseat.org" style="color: var(--sand);">Ocean Awareness Contest 2025</a> by Bow Seat.</p>
+    </footer>
+</body>
+</html>
